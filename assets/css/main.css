@@ -1,3 +1,423 @@
-p {
-  font-size: 40px;
-  color: green; }
+* {
+  font-family: "Open Sans", sans-serif; }
+
+header {
+  background: url(../img/banner.png) center;
+  min-height: 780px;
+  background-size: cover; }
+  header .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 50px 15px;
+    position: relative;
+    min-height: 780px; }
+    header .container nav a {
+      -webkit-transition: 0.1s;
+      -o-transition: 0.1s;
+      transition: 0.1s;
+      text-decoration: none;
+      color: white;
+      font-family: "Fjalla One", sans-serif;
+      padding-bottom: 10px;
+      margin-top: 50px; }
+      header .container nav a:hover {
+        color: #ff3b3b; }
+      header .container nav a:active {
+        text-shadow: 1px 1px 3px #ff3b3b; }
+      header .container nav a.active {
+        border-bottom: 1px solid #ff3b3b; }
+    header .container nav img[alt='logo'] {
+      width: 100%;
+      margin-top: -40px; }
+    header .container .button-area {
+      padding-bottom: 130px; }
+      header .container .button-area .header-btn {
+        width: 180px;
+        height: 50px;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: white;
+        background-color: #ff3b3b;
+        border: none;
+        -webkit-transition: 0.1s;
+        -o-transition: 0.1s;
+        transition: 0.1s;
+        outline: none; }
+        header .container .button-area .header-btn:hover {
+          background-color: #191919; }
+        header .container .button-area .header-btn:active {
+          -webkit-transform: translate3d(0.5px, 0.5px, 0);
+          transform: translate3d(0.5px, 0.5px, 0); }
+
+.about-container {
+  background-color: #fff;
+  padding: 70px 0; }
+  .about-container .container .title-block h4 {
+    text-align: center;
+    color: #ff3b3b;
+    font-family: "Great Vibes", cursive; }
+  .about-container .container .title-block h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-size: 2.7em; }
+  .about-container .container .text-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .about-container .container .about-btn {
+    width: 180px;
+    height: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ff3b3b;
+    border: none;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+    outline: none; }
+    .about-container .container .about-btn:hover {
+      background-color: #191919; }
+    .about-container .container .about-btn:active {
+      -webkit-transform: translate3d(0.5px, 0.5px, 0);
+      transform: translate3d(0.5px, 0.5px, 0); }
+  .about-container .container .img-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0; }
+    .about-container .container .img-block img {
+      width: 100%;
+      padding: 0 10px; }
+
+.cooking-container {
+  background-color: #22191a;
+  padding: 70px 0; }
+  .cooking-container .container .title-block h4 {
+    text-align: center;
+    color: #ff3b3b;
+    font-family: "Great Vibes", cursive; }
+  .cooking-container .container .title-block h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-size: 2.7em;
+    color: white; }
+  .cooking-container .container p {
+    color: white;
+    text-align: center; }
+  .cooking-container .container .contact-btn {
+    width: 180px;
+    height: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ff3b3b;
+    border: none;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+    outline: none; }
+    .cooking-container .container .contact-btn:hover {
+      background-color: #191919; }
+    .cooking-container .container .contact-btn:active {
+      -webkit-transform: translate3d(0.5px, 0.5px, 0);
+      transform: translate3d(0.5px, 0.5px, 0); }
+    .cooking-container .container .contact-btn:hover {
+      background-color: #fff;
+      color: #22191a; }
+
+.training-container {
+  padding: 70px 0; }
+  .training-container .container .img-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .training-container .container .img-block img {
+      width: 100%; }
+      .training-container .container .img-block img:first-child {
+        margin-bottom: 20px; }
+  .training-container .container .text-block {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .training-container .container .text-block .title-block h4 {
+      text-align: center;
+      color: #ff3b3b;
+      font-family: "Great Vibes", cursive; }
+    .training-container .container .text-block .title-block h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Fjalla One", sans-serif;
+      font-weight: 600;
+      margin-bottom: 50px;
+      font-size: 2.7em;
+      margin-bottom: 20px; }
+    .training-container .container .text-block p {
+      text-align: justify; }
+    .training-container .container .text-block h3:last-child {
+      font-family: "Fjalla One", sans-serif;
+      margin-top: 50px; }
+      .training-container .container .text-block h3:last-child a {
+        font-family: "Fjalla One", sans-serif;
+        color: #ff3b3b;
+        padding-left: 30px; }
+        .training-container .container .text-block h3:last-child a:active {
+          color: #e61f1f; }
+
+.wine-container {
+  padding: 70px 0;
+  background-color: #22191a; }
+  .wine-container .container .title-block h4 {
+    text-align: center;
+    color: #ff3b3b;
+    font-family: "Great Vibes", cursive; }
+  .wine-container .container .title-block h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-size: 2.7em;
+    color: #fff; }
+  .wine-container .container figure {
+    padding-bottom: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.05em; }
+    .wine-container .container figure figcaption {
+      font-family: "Fjalla One", sans-serif; }
+    .wine-container .container figure img {
+      width: 100%;
+      margin-bottom: 10px; }
+  .wine-container .container .load-btn {
+    width: 180px;
+    height: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ff3b3b;
+    border: none;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+    outline: none; }
+    .wine-container .container .load-btn:hover {
+      background-color: #191919; }
+    .wine-container .container .load-btn:active {
+      -webkit-transform: translate3d(0.5px, 0.5px, 0);
+      transform: translate3d(0.5px, 0.5px, 0); }
+    .wine-container .container .load-btn:hover {
+      background-color: #fff;
+      color: #22191a; }
+
+.testimonials-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/testimonials.png) center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/testimonials.png) center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/testimonials.png) center;
+  background-size: cover;
+  padding: 70px 0; }
+  .testimonials-container .container .title-block h4 {
+    text-align: center;
+    color: #ff3b3b;
+    font-family: "Great Vibes", cursive; }
+  .testimonials-container .container .title-block h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-size: 2.7em;
+    color: #fff;
+    margin-bottom: 30px; }
+  .testimonials-container .container .quotes {
+    color: #ff3b3b;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0; }
+  .testimonials-container .container .carousel-indicators {
+    position: absolute;
+    bottom: -15px; }
+  .testimonials-container .container .carousel-item {
+    color: #fff; }
+    .testimonials-container .container .carousel-item p {
+      line-height: 2em;
+      font-weight: 300; }
+    .testimonials-container .container .carousel-item h5 {
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 70px; }
+  .testimonials-container .container .carousel-control-prev-icon, .testimonials-container .container .carousel-control-next-icon {
+    background-image: none; }
+    .testimonials-container .container .carousel-control-prev-icon i, .testimonials-container .container .carousel-control-next-icon i {
+      font-size: 1.5em;
+      color: #ff3b3b; }
+  .testimonials-container .container .carousel-indicators li {
+    border: 1px solid #ff3b3b;
+    height: 10px;
+    width: 10px;
+    background-color: #ff3b3b;
+    background-clip: inherit; }
+    .testimonials-container .container .carousel-indicators li::before {
+      content: '\2B1C'; }
+
+footer {
+  background-color: #22191a; }
+  footer .container {
+    padding: 15px 0; }
+    footer .container nav a {
+      -webkit-transition: 0.1s;
+      -o-transition: 0.1s;
+      transition: 0.1s;
+      text-decoration: none;
+      color: white;
+      font-family: "Fjalla One", sans-serif; }
+      footer .container nav a:hover {
+        color: #ff3b3b; }
+      footer .container nav a:active {
+        text-shadow: 1px 1px 3px #ff3b3b; }
+      footer .container nav a.active {
+        border-bottom: 1px solid #ff3b3b; }
+    footer .container .img-block img {
+      width: 50%; }
+    footer .container .social p {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 0.8em; }
+    footer .container .social-icons i {
+      color: #ff3b3b;
+      border: 1px solid #ff3b3b;
+      font-weight: bold;
+      font-size: 1.3em;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      margin: 0 10px; }
+  footer .container-fluid {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 0.7em; }
+    footer .container-fluid p {
+      padding: 10px;
+      margin: 0; }
+
+@media (max-width: 992px) {
+  .about-container .container .text-block {
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 50px; } }
+
+@media (max-width: 768px) {
+  header .container nav a {
+    font-size: 3em;
+    padding: 0 10px;
+    color: black; }
+    header .container nav a.active {
+      border-bottom: none;
+      border-left: 1px solid #ff3b3b;
+      border-right: 1px solid #ff3b3b; }
+  header .container nav .img-block {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+    margin-bottom: 20px; }
+    header .container nav .img-block img {
+      width: 150px; }
+  header .container nav div:nth-child(0) {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; }
+  header .container nav div:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2; }
+  header .container nav div:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3; }
+  header .container nav div:nth-child(5) {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4; }
+  .training-container .container .img-block {
+    margin-bottom: 50px; }
+  footer .container nav {
+    padding: 40px; } }
+
+@media (max-width: 540px) {
+  footer .container nav a {
+    display: block; } }

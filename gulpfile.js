@@ -83,7 +83,7 @@ gulp.task('serve', function() {
         server: "./"
     });
 
-    gulp.watch("assets/scss/*.scss", gulp.series('sass', 'css-concat', 'css-minify'));
+    gulp.watch("assets/scss/*.scss", gulp.series('sass', 'css-concat', 'css-minify')).on('change', browserSync.reload);
     gulp.watch('assets/js/*.js', gulp.series('js-concat', 'js-minify')).on('change', browserSync.reload);
     gulp.watch("*.html").on('change', browserSync.reload);
 });

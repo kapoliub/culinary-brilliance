@@ -9,11 +9,260 @@
     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="build/js/bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/5b2252f7f0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Great+Vibes|Open+Sans:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="build/css/bundle.min.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <nav class="row justify-content-around text-center">
+                <div class="col-md-2 col-12">
+                    <a class="active" href="#">Home</a>
+                </div>
+                <div class="col-md-2 col-12">
+                    <a href="#">About Us</a>
+                </div>
+                <div class="col-md-2 col-12 img-block">
+                    <a href="#"><img src="./assets/img/logo.png" alt="logo"></a>
+                </div>
+                <div class="col-md-2 col-12">
+                    <a href="#">Our Services</a>
+                </div>
+                <div class="col-md-2 col-12">
+                    <a href="#">Contact Us</a>
+                </div>
+            </nav>
+            <div class="row button-area justify-content-center">
+                <div class="col-auto">
+                    <button class="header-btn">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about-container">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 title-block">
+                    <h4>Who we are</h4>
+                    <h2>About Us</h2>
+                </div>
+                <div class="col-lg-5 col-12 text-block">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    </p>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                        officia deserunt mollit anim id est laborum. Sed ut perspiciatis 
+                        unde omnis iste natus error sit voluptatem accusantium doloremque 
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                    </p>
+                    <button class="about-btn">Read More</button>
+                </div>
+                <div class="col-lg-7 img-block">
+                    <img class="col-6" src="./build/img/about1.png" alt="about_pic">
+                    <img class="col-6" src="./build/img/about2.png" alt="about_pic">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cooking-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-block">
+                        <h4>Cooking</h4>
+                        <h2>Classes</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. 
+                    </p>
+                </div>
+                <div class="col-12"></div>
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="contact-btn">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="training-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 img-block">
+                    <img src="./build/img/training1.png" alt="training_pic">
+                    <img src="./build/img/training2.png" alt="training_pic">
+                </div>
+                <div class="col-12 col-md-6 text-block">
+                    <div class="title-block">
+                        <h4>Personal</h4>
+                        <h2>Training</h2>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. 
+                    </p>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                        qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis 
+                        unde omnis iste natus error sit voluptatem accusantium doloremque 
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                    <h3>Call us <a href="tel:123456789">123-456-789</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wine-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title-block">
+                    <h4>Wine</h4>
+                    <h2>Tasting</h2>
+                </div>
+                <figure class="col-12 col-lg-3 col-md-6">
+                    <img src="./build/img/wine1.png" alt="wine_pic1"/>
+                    <figcaption>MAYACAMAS VINEYARDS CABERNET SAUVIGNON 1999</figcaption>
+                </figure>
+                <figure class="col-12 col-lg-3 col-md-6">
+                    <img src="./build/img/wine2.png" alt="wine_pic2"/>
+                    <figcaption>HERMANN J. WIEMER HJW VINEYARD RIESLING 2016</figcaption>
+                </figure>
+                <figure class="col-12 col-lg-3 col-md-6">
+                    <img src="./build/img/wine3.png" alt="wine_pic3"/>
+                    <figcaption>VIÑA VIK MILLAHUE <br>2012</figcaption>
+                </figure>
+                <figure class="col-12 col-lg-3 col-md-6">
+                    <img src="./build/img/wine4.png" alt="wine_pic4"/>
+                    <figcaption>KIR-YIANNI ESTATE RAMNISTA 2013</figcaption>
+                </figure>
+                <figure class="col-12 col-lg-3 col-md-6">
+                    <img src="./build/img/wine5.png" alt="wine_pic5"/>
+                    <figcaption>TABLAS CREEK VINEYARD ESPRIT DE TABLAS BLANC 2015</figcaption>
+                </figure>
+                <figure class="col-12 col-lg-3 col-md-6">
+                    <img src="./build/img/wine6.png" alt="wine_pic6"/>
+                    <figcaption>DELAMOTTE BLANC DE BLANCS BRUT 2008</figcaption>
+                </figure>
+                <figure class="col-12 col-lg-3 col-md-6">
+                    <img src="./build/img/wine7.png" alt="wine_pic7"/>
+                    <figcaption>AZIENDA AGRICOLA ARIANNA OCCHIPINTI SP68 SICILIA ROSSO IGT 2017</figcaption>
+                </figure>
+                <figure class="col-12 col-lg-3 col-md-6">
+                    <img src="./build/img/wine8.png" alt="wine_pic8"/>
+                    <figcaption>DAMILANO BAROLO LECINQUEVIGNE 2013</figcaption>
+                </figure>
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="load-btn">Load More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="title-block">
+                        <h4>Testimonials</h4>
+                        <h2>Happy Clients</h2>
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="quotes"><i class="fas fa-quote-left"></i></p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                    nisi ut aliquip ex ea commodo consequat. <br> Ut enim ad minim veniam, 
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat.
+                                </p>
+                                <h5>John Smith</h5>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="quotes"><i class="fas fa-quote-left"></i></p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                    nisi ut aliquip ex ea commodo consequat. <br> Ut enim ad minim veniam, 
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat.
+                                </p>
+                                <h5>John Smith</h5>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="quotes"><i class="fas fa-quote-left"></i></p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                    nisi ut aliquip ex ea commodo consequat. <br> Ut enim ad minim veniam, 
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat.
+                                </p>
+                                <h5>John Smith</h5>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev d-flex justify-content-start align-items-end" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-long-arrow-alt-left"></i></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next d-flex justify-content-end align-items-end" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-long-arrow-alt-right"></i></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row d-flex justify-content-md-between align-items-center justify-content-center text-center text-md-left">
+                <div class="col-auto img-block ">
+                    <a href="#"><img src="./build/img/logo.png" alt="logo"></a>
+                </div>
+                <nav class="col-md-6 col-12 d-flex justify-content-between">
+                    <a class="active" href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+                <div class="col-md-auto col-12 social text-center">
+                    <p>Connect with us:</p>
+                    <div class="social-icons d-flex justify-content-md-around justify-content-center">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <p>Web Design by AIT, Inc</p>
+        </div>
+    </footer>
 </body>
 </html>
