@@ -1,1 +1,3 @@
-# culinary-brilliance
+- Open command line in current folder.
+- run: npm run dev (for developers)
+- run: npm run start (for users)
