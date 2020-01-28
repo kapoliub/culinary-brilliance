@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm install && gulp build",
+    "start": "npm install && gulp start",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
