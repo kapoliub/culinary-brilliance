@@ -337,8 +337,12 @@ header{
                 color: #fff;
             }
         }
+        .wine-description{
+            position: absolute;
+            left: 0;
+        }
         figure{
-            padding-bottom: 40px;
+            margin-bottom: 40px;
             text-align: center;
             color: #fff;
             font-size: 1.05em;
@@ -348,6 +352,18 @@ header{
             img{
                 width: 100%;
                 margin-bottom: 10px;
+            }
+            .hover-block{
+                z-index: 1;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                #read-btn{
+                    @include button;
+                }
             }
         }
         .load-btn{

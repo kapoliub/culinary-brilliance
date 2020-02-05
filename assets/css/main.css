@@ -364,8 +364,11 @@ header {
     margin-bottom: 50px;
     font-size: 2.7em;
     color: #fff; }
+  .wine-container .container .wine-description {
+    position: absolute;
+    left: 0; }
   .wine-container .container figure {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     text-align: center;
     color: #fff;
     font-size: 1.05em; }
@@ -374,6 +377,40 @@ header {
     .wine-container .container figure img {
       width: 100%;
       margin-bottom: 10px; }
+    .wine-container .container figure .hover-block {
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .wine-container .container figure .hover-block #read-btn {
+        width: 180px;
+        height: 50px;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: white;
+        background-color: #ff3b3b;
+        border: none;
+        -webkit-transition: 0.1s;
+        -o-transition: 0.1s;
+        transition: 0.1s;
+        outline: none; }
+        .wine-container .container figure .hover-block #read-btn:hover {
+          background-color: #191919; }
+        .wine-container .container figure .hover-block #read-btn:active {
+          -webkit-transform: translate3d(0.5px, 0.5px, 0);
+          transform: translate3d(0.5px, 0.5px, 0); }
   .wine-container .container .load-btn {
     margin-top: 20px;
     width: 180px;
