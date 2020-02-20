@@ -65,11 +65,11 @@ gulp.task("js-minify", gulp.series('clean-js', function () {
 }));
 
 gulp.task('babel', function(){
-    return gulp.src('assets/js/*.js')
+    return gulp.src('build/js/*.js')
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        .pipe(gulp.dest('assets/js/'))
+        .pipe(gulp.dest('build/js/'))
 });
 
 gulp.task('img-compress', function(){
