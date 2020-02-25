@@ -63,13 +63,21 @@ header{
                 width: 30px;
                 height: 30px;
                 outline: none;
+                padding: 20px;
+                margin-top: 15px;
                 .custom-toggler{
                     i{
                         color: $main-color;
-                    border: 1px solid $main-color;
-                    padding: 10px;
+                        border: 1px solid $main-color;
+                        padding: 10px;
+                        position: absolute;
+                        right: 17px;
+                        top: 20px;
                     }
                 }
+            }
+            .navbar-nav{
+                padding: 0;
             }
             .nav-item-custom{
                 transition: $transition-time;
@@ -131,6 +139,7 @@ header{
                 height: 50px;
                 outline: none;
                 padding: 10px;
+                border: 1px solid rgb(160, 160, 160);
             }
             #submit-btn{
                 @include button;
@@ -324,6 +333,32 @@ header{
         }
     }
 }
+.wine-description{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    .container{
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 70px;
+        img{
+            max-width: 390px;
+            height: 100%;
+            padding: 0;
+        }
+        .description{
+            max-height: 520px;
+            overflow-y: auto;
+            h4{
+                font-family: $alt2-font;
+            }
+            p{
+                line-height: 1.7;
+            }
+        }
+    }
+}
 .wine-container{
     padding: $section-padding;
     background-color: $alt-color;
@@ -337,8 +372,9 @@ header{
                 color: #fff;
             }
         }
+        
         figure{
-            padding-bottom: 40px;
+            margin-bottom: 40px;
             text-align: center;
             color: #fff;
             font-size: 1.05em;
@@ -348,6 +384,18 @@ header{
             img{
                 width: 100%;
                 margin-bottom: 10px;
+            }
+            .hover-block{
+                z-index: 1;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                #read-btn{
+                    @include button;
+                }
             }
         }
         .load-btn{
@@ -429,7 +477,8 @@ header{
 footer{
     background-color: $alt-color;
     .container{
-        padding: 15px 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
         nav{
             a{
                 transition: $transition-time;
@@ -498,6 +547,16 @@ footer{
     }
 }
 
+@media (max-width: 1200px){
+    .wine-description{
+        .container{
+            .description{
+                max-height: 471px;
+            }
+        }
+    }
+}
+
 @media (max-width: 992px){
     .about-container{
         .container{
@@ -523,6 +582,16 @@ footer{
                 .carousel-inner .carousel-item-left{ 
                 transform: translateX(0);
                 }
+            }
+        }
+    }
+    .wine-description{
+        .container{
+            img{
+                margin-bottom: 50px;
+            }
+            .description{
+                text-align: center;
             }
         }
     }
@@ -591,6 +660,9 @@ footer{
 @media (max-width: 540px){
     footer{
         .container{
+            .social{
+                padding: 0;
+            }
             nav{
                 a{
                     display: block;
